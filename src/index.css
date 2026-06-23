@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+:root {
+  --primary-pink: #ff8fa3;
+  --primary-pink-light: #ffd6dc;
+  --primary-pink-dark: #e85d75;
+  --bg-cream: #fff5f5;
+  --text-dark: #1a1a2e;
+  --text-muted: #6b7280;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd6dc 0%, #ffeef1 50%, #f8f0f3 100%);
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* App container - always mobile size */
+.app-container {
+  width: 100%;
+  max-width: 414px;
+  height: 100%;
+  max-height: 896px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffd6dc 0%, #fff0f2 40%, #fff5f7 100%);
+  box-shadow: 0 25px 80px rgba(232, 93, 117, 0.25);
+}
+
+@media (min-width: 430px) {
+  .app-container {
+    height: 90vh;
+    border-radius: 40px;
+    border: 8px solid rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Gradient backgrounds */
+.bg-gradient-pink {
+  background: linear-gradient(135deg, #ff8fa3 0%, #ffb3c1 100%);
+}
+
+.bg-gradient-soft {
+  background: linear-gradient(180deg, #ffd6dc 0%, #fff0f2 50%, #fff5f7 100%);
+}
+
+/* Glassmorphism cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-card-dark {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #ff8fa3 0%, #ff6b85 100%);
+  box-shadow: 0 8px 24px rgba(255, 107, 133, 0.35);
+}
+
+.btn-black {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  box-shadow: 0 8px 24px rgba(26, 26, 46, 0.25);
+}
+
+/* Text gradient */
+.text-gradient-pink {
+  background: linear-gradient(135deg, #ff6b85 0%, #ff8fa3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* Workout card hover */
+.workout-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.workout-card:active {
+  transform: scale(0.96);
+}
+
+/* Heart animation */
+.heart-btn {
+  transition: all 0.2s ease;
+}
+
+.heart-btn:active {
+  transform: scale(0.8);
+}
+
+.heart-btn.liked {
+  color: #ff4757;
+}
+
+/* Filter chips */
+.filter-chip {
+  transition: all 0.25s ease;
+}
+
+.filter-chip.active {
+  background: linear-gradient(135deg, #ff8fa3 0%, #ff6b85 100%);
+  color: white;
+  box-shadow: 0 4px 16px rgba(255, 107, 133, 0.3);
+}
+
+/* Home indicator */
+.home-indicator {
+  width: 134px;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+}
+
+/* Loading shopping bag */
+.shopping-bag {
+  filter: drop-shadow(0 12px 30px rgba(255, 107, 133, 0.4));
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}

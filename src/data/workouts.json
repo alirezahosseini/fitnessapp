@@ -1,0 +1,107 @@
+{
+  "categories": ["All", "Cardio", "Strength", "Yoga", "HIIT"],
+  "workouts": [
+    {
+      "id": 1,
+      "title": "Body Workout",
+      "subtitle": "Full body stretch",
+      "category": "Yoga",
+      "calories": "50% Keloric",
+      "duration": "45m",
+      "image": "/workout-body.jpg",
+      "liked": false,
+      "level": "Beginner",
+      "description": "A gentle full body workout that targets all major muscle groups in a single session, helping improve flexibility, balance, and overall fitness.",
+      "stats": {
+        "duration": "4h.10m",
+        "kcal": 90.9,
+        "exercises": 12
+      }
+    },
+    {
+      "id": 2,
+      "title": "Power Pulse",
+      "subtitle": "Dumbbell strength",
+      "category": "Strength",
+      "calories": "80% Keloric",
+      "duration": "30m",
+      "image": "/workout-power1.jpg",
+      "liked": true,
+      "level": "Intermediate",
+      "description": "High intensity strength training with dumbbells to build lean muscle and boost your metabolism throughout the day.",
+      "stats": {
+        "duration": "3h.45m",
+        "kcal": 145.2,
+        "exercises": 18
+      }
+    },
+    {
+      "id": 3,
+      "title": "Power Pulse",
+      "subtitle": "Upper body burn",
+      "category": "Strength",
+      "calories": "80% Keloric",
+      "duration": "25m",
+      "image": "/workout-power2.jpg",
+      "liked": false,
+      "level": "Advanced",
+      "description": "Focused upper body routine designed to tone arms, shoulders, and back while improving overall posture and strength.",
+      "stats": {
+        "duration": "2h.20m",
+        "kcal": 120.5,
+        "exercises": 15
+      }
+    },
+    {
+      "id": 4,
+      "title": "Muscle Ignition",
+      "subtitle": "Lower body power",
+      "category": "HIIT",
+      "calories": "60% Keloric",
+      "duration": "35m",
+      "image": "/workout-muscle.jpg",
+      "liked": false,
+      "level": "Intermediate",
+      "description": "Dynamic HIIT workout targeting legs and glutes with explosive movements to ignite your muscles and burn calories fast.",
+      "stats": {
+        "duration": "5h.05m",
+        "kcal": 210.8,
+        "exercises": 20
+      }
+    },
+    {
+      "id": 5,
+      "title": "Cardio Blast",
+      "subtitle": "Heart pumping",
+      "category": "Cardio",
+      "calories": "90% Keloric",
+      "duration": "20m",
+      "image": "/workout-body.jpg",
+      "liked": true,
+      "level": "Beginner",
+      "description": "Quick cardio session to get your heart rate up and improve endurance with simple, effective movements.",
+      "stats": {
+        "duration": "1h.30m",
+        "kcal": 180.3,
+        "exercises": 10
+      }
+    },
+    {
+      "id": 6,
+      "title": "Core Crusher",
+      "subtitle": "Abs focused",
+      "category": "Strength",
+      "calories": "70% Keloric",
+      "duration": "15m",
+      "image": "/workout-power2.jpg",
+      "liked": false,
+      "level": "Intermediate",
+      "description": "Core-focused routine to build strong abs and improve stability for all your daily activities and workouts.",
+      "stats": {
+        "duration": "2h.00m",
+        "kcal": 95.6,
+        "exercises": 14
+      }
+    }
+  ]
+}
